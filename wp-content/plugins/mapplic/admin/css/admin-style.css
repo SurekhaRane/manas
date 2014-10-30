@@ -1,0 +1,149 @@
+/* Sortable list */
+.sortable-list .list-item {
+	background-color: #fff;
+	margin-top: 9px;
+}
+
+.sortable-list .list-item-handle {
+	border: 1px solid #dfdfdf;
+	box-shadow:  1px 1px rgba(0, 0, 0, .04);
+	cursor: move;
+	padding: 10px 15px;
+}
+
+.sortable-list .list-item-handle:hover {
+	border-color: #999;
+}
+
+.sortable-list .list-item-placeholder {
+	margin-top: 9px;
+	border: 1px dashed #bbb;
+}
+
+.sortable-list .menu-item-title {
+	color: #222;
+	line-height: 20px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.sortable-list .menu-item-toggle {
+	float: right;
+	color: #aaa;
+	width: 20px;
+	height: 20px;
+	margin-right: -5px;
+	outline: none;
+}
+
+.sortable-list .menu-item-toggle:before {
+	display: inline-block;
+	font: 400 20px/1 dashicons;
+	content: '\f140' !important;
+	text-decoration: none !important;
+}
+
+.sortable-list .menu-item-toggle.opened:before {
+	content: '\f142' !important;
+}
+
+.sortable-list .list-item-settings {
+	background-color: #fff;
+	color: #444;
+	display: none;
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	box-shadow:  1px 1px rgba(0, 0, 0, .04);
+}
+
+label {
+	font-style: italic;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.sortable-list .list-item-settings .input-text {
+	width: 100%;
+}
+
+.sortable-list .list-item-settings input[type="checkbox"] {
+	float: left;
+	margin-right: 10px;
+	margin-top: 2px;
+}
+
+.list-item-settings .item-delete {
+	color:  #a00;
+}
+
+.list-item-settings .item-delete:hover {
+	color: red;
+}
+
+.list-item.new-item {
+	display: none;
+}
+
+input[type="text"] {
+	margin-bottom: 10px;
+}
+
+input[type="button"] {
+	outline: none;
+}
+
+#landmark-settings {
+	display: none;
+}
+
+#admin-map {
+	width: 100%;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* Zoom level */
+.im-zoomlevel {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	position: absolute;
+	font-size: 14px;
+	margin: 10px;
+	padding: 4px 6px;
+	top: 0;
+	left: 0;
+	opacity: 0.95;
+}
+
+
+/* Pins */
+.selected-pin {
+	border-radius: 6px;
+	background-color: rgba(103, 209, 231, 0.8);
+}
+
+.im-pin.hidden {
+	background-image: url(../../images/pin-hidden.png); 
+	display: block;
+}
+
+#pins-input {
+	max-height: 96px;
+	overflow-y: auto;
+}
+
+#pins-input .im-pin {
+	border: 1px solid #ddd;
+	float: left;
+	position: static;
+	display: inline-block;
+	padding: 4px;
+	margin: 0 6px 8px 0;
+}
+
+#pins-input .im-pin.selected {
+	border-color: #999;
+}

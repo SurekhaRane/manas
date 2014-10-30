@@ -1,0 +1,12 @@
+{
+    "name" : "ajency/apartmentselector",
+    "description" : "Composer.json for apartmentselector",
+    "minimum-stability" : "stable",
+    "license" : "proprietary",
+    "authors" : [
+        {
+            "name" : "Team Ajency",
+            "email" : "team@ajency.in"
+        }
+    ]
+}
