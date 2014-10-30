@@ -1,0 +1,235 @@
+
+.flatContainer{
+	.vs-wrapper{
+		background-color: @color-white;
+		// border-top: 1px solid lighten(@color-grey, 25%)
+	}
+	.summary{
+		padding: 20px;
+		background-color: lighten(@color-grey, 38%);
+		.row{
+			margin-top: 20px;
+		}
+	}
+}
+
+.facilities{
+	img{
+		margin: auto;
+	}
+}
+
+/*Slider*/
+.ls-nav ul{
+	// width: 100% !important;
+	// display: table;
+	li{
+		// display: table-cell;
+		text-align: center;
+		padding: 0 2%;
+		// width: 25%;
+		a{
+			width: 29%;
+			// display: table-cell;
+			// margin: 0 2%;
+			color: @gray-light;
+			.bold;
+		}
+	} 
+} 
+
+.liquid-slider .ls-panel{
+	img{
+		// width: 100%;
+		margin: 0 auto;
+	}
+}
+
+
+// .slick-dots li button:before{
+// 	content: '.';
+// 	font-size: 60px;
+// 	font-family: 'Lato';
+// 	top: -20px;
+// 	color: @color-primary;
+// }
+
+
+.unitDetails{
+	// padding: 10px;
+	text-align: center;
+
+	.unitBox{
+		border: 2px solid @gray-lighter;
+		background-color: @color-white;
+		padding: 10px 0 0;
+		// -webkit-box-shadow: 0px 2px 4px 1px @gray-lighter;
+		// 		box-shadow: 0px 2px 4px 1px @gray-lighter;
+		margin: 0 0 15px;
+
+		h3{
+			margin-top: 0;
+			margin-bottom: 5px;
+			padding: 0 10px;
+			color: @gray-light;
+		}
+
+		h4.titles{
+			
+			.bold;
+			border-top: 1px solid @gray-lighter;
+			margin-top: 0px;
+			padding: 10px 10px;
+			margin-bottom: 0;
+			background: lighten(@color-grey, 35%);
+			color: ;
+			span{
+				color: lighten(@gray-light, 10%);
+			}
+			
+		}
+
+		.rooms, .others{
+			width: 48%;
+			display: inline-block;
+			padding: 10px 0;
+			color: @gray-light;
+			.bold;
+
+			h4.size{
+				margin: 0;
+				padding: 0;
+				background: none;
+				border: none;
+				.light;				
+				.italic;
+				display: inline-block;
+			}
+		}
+		.others{
+			width: 100%;
+		}
+	}
+
+	.unitNmbr{
+		// width: 48%;
+		// float: left;
+		h3{
+			color: @color-primary;
+		}
+	}
+
+	.chargeArea{
+		// width: 48%;
+		// float: left;
+		// border-left: none;
+	}
+
+	.facing{
+		// width: 31.33%;
+		// float: left;
+		h4.view{
+			.bold;
+			color: @gray-light;
+			.italic;
+		}
+	}
+}
+
+.step4Actions{
+	// background-color: darken(@gray-lighter, 10%);
+	padding-top: 10px;
+	margin-top: 20px;
+	.grid-block-4{
+		background-color: @color-white;
+		h3{
+			// color: lighten(@gray-light, 20%);
+			color: lighten(@color-primary, 20%);
+			.ease;
+		}
+		h4{
+			.bold;
+			color: @gray-light;
+		}
+		&:hover{
+			h3{
+				color: @color-primary;
+				.ease;
+			}
+		}
+	}
+}
+
+/* Email Popup */
+.formPopup{
+	background: @color-white;
+	padding: 20px;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	border: 10px solid @gray-light;
+	min-height: 0;
+	.formIntro{
+		line-height: 30px;
+		font-size: 28px;
+		margin: 10px 0 20px;
+		span{
+			.h3;
+			color: @color-primary;
+			font-weight: 500;
+		}
+	}
+	.remodal-close{
+		background: @gray-dark;
+		top: -20px;
+		right: -20px;
+		&:hover{
+			text-decoration: none;
+		}
+		&:after{
+			line-height: 25px;
+		}
+	}
+	.with_frm_style label.frm_primary_label, .with_frm_style.frm_login_form label{
+		.h5;
+		margin-bottom: 5px;
+		font-weight: 600;
+	}
+
+	.with_frm_style input[type=text], .with_frm_style input[type=password], .with_frm_style input[type=email], .with_frm_style input[type=number], .with_frm_style input[type=url], .with_frm_style input[type=tel], .with_frm_style select, .with_frm_style textarea, .frm_form_fields_style, .with_frm_style .frm_scroll_box .frm_opt_container, .frm_form_fields_active_style, .frm_form_fields_error_style, .with_frm_style .chzn-container-multi .chzn-choices, .with_frm_style .chzn-container-single .chzn-single{
+		.h4;
+		padding: 8px;
+		margin-top: 0;
+		border-radius: 0;
+	}
+
+	.with_frm_style .frm_submit input[type=submit]{
+		.btn;
+		.btn-primary;
+		margin: auto;
+		display: block
+	}
+
+	img{
+		margin: auto;
+		display: block;
+		margin-top: 10px;
+	}
+
+	.with_frm_style .frm_message, .frm_success_style{
+		background: @gray-lighter;
+		color: @gray-dark;
+		border: none;
+	}
+}
+
+/* Print Loader */
+.prntLoader{
+	background: url(../images/loader.gif) center center no-repeat #000;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	z-index: 9999;
+	position: fixed;
+}

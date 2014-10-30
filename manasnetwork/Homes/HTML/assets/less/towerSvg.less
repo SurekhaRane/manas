@@ -1,0 +1,57 @@
+.aviable:hover, rect.selected-flat, polygon.selected-flat{
+  fill:#99DD1F !important;
+  cursor:pointer;
+  opacity :0.8;
+  .ease;
+  & + text{
+    opacity:1 !important;
+    fill:#000 !important;
+    font-size: 18px;
+  }
+}
+
+rect, polygon{
+  &.range{
+    fill:#FF6600 !important;
+    cursor:pointer;
+    opacity :0.5;
+  }
+}
+
+.sold:hover{
+  fill:#DD1F1F   !important;
+  cursor:pointer;
+  opacity :0.8;
+  .ease;
+}
+.position{
+  fill:#F60   !important;
+  cursor:pointer;
+  content : ""
+}
+
+.sliderPlans .selected{
+  fill:#99DD1F   !important;
+  opacity :0.8
+}
+.unit-hover{
+  content: ""
+}
+.disable{
+  fill: #999; 
+  opacity:0.9;
+}
+.other:hover{
+  fill:#EEEEEE !important;
+  cursor:default;
+  opacity :0.8;
+  .ease;
+}
+text.selected-flat{
+  // fill:#000 !important;
+  // font-size: 18px;
+}
+
+text{ 
+  pointer-events: none;
+}

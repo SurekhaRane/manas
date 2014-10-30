@@ -1,0 +1,348 @@
+
+
+/**** Responsive Table Styles ****/
+.unitTable {
+	// position: relative;
+	width: 100%;
+	// max-width: 1170px;
+	// margin: 1em auto;
+	padding: 10px;
+	font-size: 14px;
+	background: lighten(@color-grey, 38%);
+	// border-right: 1px solid lighten(@color-grey, 25%);
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	&::before {
+	  /* White color gradient on the right */
+	  content: '';
+	  // position: absolute;
+	  top: 0;
+	  right: -1px;
+	  height: 100%;
+	  width: 35px;
+	  background: -webkit-linear-gradient( right , lighten(@color-grey, 38%) 10%, rgba(255, 255, 255, 0));
+	  background: linear-gradient(to left, lighten(@color-grey, 38%) 10%, rgba(255, 255, 255, 0));
+	  z-index: 5;
+	  pointer-events: none;
+	}
+	&.table-end::before {
+		display: none;
+	}
+	.unitSlider{
+		margin: auto;
+		width: 100%;
+		height: auto !important;
+		.unitContainer{
+			// margin: 0 20px;
+			width: 90%;
+			margin: auto;
+		}
+	}
+  	.cd-table-container {
+		position: relative;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.cd-table-wrapper {
+		// width: 1365px;
+		width: 100%;
+		white-space: nowrap;
+		padding-left: 120px;
+	}
+	.cd-table-column {
+		width: 200px;
+		float: left;
+		// display: inline-block;
+		margin-left: -1px;
+		// padding: 1em 0;
+		&:last-child {
+			border-right: none;
+		}
+	}
+	// .cd-table-row{
+	// 	.cd-block{
+	// 		width: 125px;
+	// 		// float: left;
+	// 		display: inline-block;
+	// 		text-align: center;
+	// 		margin-left: -1px;
+	// 		line-height: 20px;
+	// 		padding: 1em 0;
+	// 		height: 84px;
+	// 		background-color: lighten(@color-grey, 38%);
+	// 		border-bottom: 1px solid lighten(@color-grey, 35%);
+	// 		&:last-child {
+	// 			border-right: none;
+	// 		}
+	// 	}
+	// }
+	ul > li {
+		// position: relative;
+		text-align: center;
+		// padding: 1em;
+		padding-top: 14px;
+		height: 84px;
+		// color: lighten(@color-grey, 20%);
+		background-color: lighten(@color-grey, 38%);
+		// border-bottom: 1px solid lighten(@color-grey, 35%);
+		// line-height: 42px;
+		// background-color: white;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.cd-unchecked, .cd-checked {
+		span {
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: 32px 16px;
+			left: 50%;
+			top: 50%;
+			bottom: auto;
+			right: auto;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+			-ms-transform: translateX(-50%) translateY(-50%);
+			-o-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+	}
+	.cd-unchecked {
+		span {
+			background-position: -16px 0;
+		}
+	}
+	.cd-select {
+		display: block;
+		height: 100%;
+		width: 100%;
+		font-weight: bold;
+	}
+	header.cd-table-column {
+		// position: absolute;
+		// width: 110px;
+		height: 100%;
+		// left: 0;
+		// top: 0;
+		z-index: 10;
+		background-color: lighten(@color-grey, 38%);
+		margin-left: 0;
+		border-right: 1px solid lighten(@color-grey, 35%);
+		box-shadow: 2px 0 0 rgba(0, 0, 0, 0.1);
+		pointer-events: none;
+		li {
+			background-color: lighten(@color-grey, 38%);
+			border-bottom: 0;
+			// text-align: left;
+			padding-top: 22px;
+			// font-weight: 400;
+			// color: @color-grey;
+			.small;
+			.bold;
+			text-transform: uppercase;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+			small {
+				// font-weight: 300;
+				display: block;
+			}
+		}
+	}
+	.cd-scroll-right {
+		display: block;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -8px;
+		z-index: 6;
+		cursor: pointer;
+		background: url("../img/small-arrow.svg") no-repeat center center;
+		-webkit-animation: cd-scroll-right 1.5s infinite;
+		-moz-animation: cd-scroll-right 1.5s infinite;
+		animation: cd-scroll-right 1.5s infinite;
+	}
+
+	// margin: 2em auto;
+	// border-right: none;
+	
+	.cd-table-wrapper {
+		// width: 100%;
+		padding-left: 16.66667%;
+	}
+	// .cd-table-column {
+	// 	width: 150px;
+	// 	float: left;
+	// 	&:last-child {
+	// 		border-right: 1px solid #e6e7f1;
+	// 	}
+	// }
+	.cd-table-row{
+		.cd-block{
+			// width: 150px;
+			&:last-child {
+				margin-right: 10px;
+				border-right: 1px solid @gray-lighter;
+			}
+		}
+	}
+	header.cd-table-column {
+		// width: 16.66667%;
+		float: left;
+		// background: lighten(@color-grey, 30%);
+		box-shadow: none;
+		pointer-events: auto;
+	}
+	// .cd-scroll-right {
+	// 	display: none;
+	// }
+	
+	@media only screen and (min-width: 1170px) {
+		// margin: 4em auto;
+	}
+}
+
+@-webkit-keyframes cd-scroll-right {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+
+  50% {
+    -webkit-transform: translateX(3px);
+  }
+}
+@-moz-keyframes cd-scroll-right {
+  0%, 100% {
+    -moz-transform: translateX(0);
+  }
+
+  50% {
+    -moz-transform: translateX(3px);
+  }
+}
+@keyframes cd-scroll-right {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  50% {
+    -webkit-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    -o-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+}
+
+
+/**** No Units Styles ****/
+.noUnits{
+	text-align: center;
+	font-size: 22px;
+	padding-right: 14.66667%;
+}
+
+/**** SVG Sizing ****/
+.floorSvg{
+	background: lighten(@color-grey, 38%);
+	padding-top: 5px;
+	& > div{
+		width: 220px;
+		margin: auto
+	}
+}
+
+
+/**** Hide Header with Tower Name ****/
+#screen-three-region{
+	.vs-header{
+		display: none;
+	}
+}
+
+/**** SVG Legend ****/
+.svgLegend{
+	.h5;
+	margin: 20px auto 30px;
+	text-align: center;
+	.legendBox{
+		display: inline-block;
+		height: 15px;
+		width: 25px;
+		border: 1px solid @gray-light;
+		&.available{
+			background: #99DD1F;
+		}
+		&.sold{
+			background: #DD1F1F;
+		}
+		&.na{
+			background: #EEE;
+		}
+	}
+}
+
+/**** Labels on Tower SVG ****/
+.positionSvg{
+	width: 100%;
+	margin: 0 auto;
+	.HIGHRISE, .LOWRISE, .MIDRISE{
+		position: relative;
+		visibility: hidden;
+		&:after{
+			// position: absolute;
+			// content: 'high-range';
+			// left: -10px;
+			// color: @color-primary;
+			// .bold;
+		}
+	}
+	text{
+		font-family: 'kievit' !important;
+		.bold;
+	}
+}
+
+@media (min-width:1200px) and (max-width:1400px){
+	.positionSvg, .svgLegend{
+		width: 80%;
+	}
+}
+@media (min-width:1401px){
+	.positionSvg, .svgLegend{
+		width: 75%;
+	}
+}
+
+
+/**** Radar Box ****/
+.rightTowerSvg{
+	position: relative;
+}
+.radarBox{
+	background: url('../images/map.png') no-repeat center;
+	background-size: contain;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	right: 2%;
+	top: 0;
+	box-shadow: 0 0 5px @gray-light;
+}
+
+

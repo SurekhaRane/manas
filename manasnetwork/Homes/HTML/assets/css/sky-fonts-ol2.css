@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?ext4ap');
+	src:url('../fonts/icomoon.eot?#iefixext4ap') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?ext4ap') format('woff'),
+		url('../fonts/icomoon.ttf?ext4ap') format('truetype'),
+		url('../fonts/icomoon.svg?ext4ap#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="sky-"], [class*=" sky-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.sky-umbrella:before {
+	content: "\e060";
+}
+.sky-thermometer:before {
+	content: "\e062";
+}
+.sky-drop:before {
+	content: "\e063";
+}
+.sky-sun:before {
+	content: "\e064";
+}
+.sky-location:before {
+	content: "\e070";
+}
+.sky-location-2:before {
+	content: "\e071";
+}
+.sky-map:before {
+	content: "\e072";
+}
+.sky-head:before {
+	content: "\e074";
+}
+.sky-content-right:before {
+	content: "\e100";
+}
+.sky-content-left:before {
+	content: "\e101";
+}
+.sky-grid:before {
+	content: "\e102";
+}
+.sky-ban:before {
+	content: "\e107";
+}
+.sky-flag:before {
+	content: "\e108";
+}
+.sky-trash:before {
+	content: "\e109";
+}
+.sky-expand:before {
+	content: "\e110";
+}
+.sky-contract:before {
+	content: "\e111";
+}
+.sky-maximize:before {
+	content: "\e112";
+}
+.sky-minimize:before {
+	content: "\e113";
+}
+.sky-plus:before {
+	content: "\e114";
+}
+.sky-check:before {
+	content: "\e116";
+}
+.sky-cross:before {
+	content: "\e117";
+}
+.sky-move:before {
+	content: "\e118";
+}
+.sky-help:before {
+	content: "\e127";
+}

@@ -1,0 +1,115 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?w17a1t');
+	src:url('../fonts/icomoon.eot?#iefixw17a1t') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?w17a1t') format('woff'),
+		url('../fonts/icomoon.ttf?w17a1t') format('truetype'),
+		url('../fonts/icomoon.svg?w17a1t#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="sky-"], [class*=" sky-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.sky-mail:before {
+	content: "\e002";
+}
+.sky-printer:before {
+	content: "\e020";
+}
+.sky-heart:before {
+	content: "\e024";
+}
+.sky-layers:before {
+	content: "\e031";
+}
+.sky-paper:before {
+	content: "\e034";
+}
+.sky-umbrella:before {
+	content: "\e060";
+}
+.sky-thermometer:before {
+	content: "\e062";
+}
+.sky-drop:before {
+	content: "\e063";
+}
+.sky-sun:before {
+	content: "\e064";
+}
+.sky-location:before {
+	content: "\e070";
+}
+.sky-location-2:before {
+	content: "\e071";
+}
+.sky-map:before {
+	content: "\e072";
+}
+.sky-head:before {
+	content: "\e074";
+}
+.sky-content-right:before {
+	content: "\e100";
+}
+.sky-content-left:before {
+	content: "\e101";
+}
+.sky-grid:before {
+	content: "\e102";
+}
+.sky-ban:before {
+	content: "\e107";
+}
+.sky-flag:before {
+	content: "\e108";
+}
+.sky-trash:before {
+	content: "\e109";
+}
+.sky-expand:before {
+	content: "\e110";
+}
+.sky-contract:before {
+	content: "\e111";
+}
+.sky-maximize:before {
+	content: "\e112";
+}
+.sky-minimize:before {
+	content: "\e113";
+}
+.sky-plus:before {
+	content: "\e114";
+}
+.sky-check:before {
+	content: "\e116";
+}
+.sky-cross:before {
+	content: "\e117";
+}
+.sky-move:before {
+	content: "\e118";
+}
+.sky-help:before {
+	content: "\e127";
+}
+.sky-coin:before {
+	content: "\e601";
+}
+.sky-banknote:before {
+	content: "\e600";
+}

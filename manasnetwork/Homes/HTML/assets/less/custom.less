@@ -1,0 +1,396 @@
+/*
+Theme Name:     Skyi Apartment Selector
+Theme URI:      http://ajency.in/
+Description:    Apartment Selector
+Author:         Jeromie for Ajency.in
+Author URI:     http://ajency.in/
+Template:       skyi
+Version:        0.1.0
+*/
+
+@import "bootstrap/bootstrap";
+@import "skyi-master/custom-variables";
+@import "skyi-master/bootstrap-mods";
+// @import "variables";
+// @import "mixins.less";
+@import "header";
+@import "misc";
+@import "boxes";
+@import "step1";
+@import "step2";
+@import "step3";
+@import "step4";
+@import "triplelayout";
+@import "towerList";
+// @import "unitSingle";
+@import "font";
+@import "checkbox";
+@import "costsheet";
+@import "compare";
+@import "towerSvg";
+
+
+body{
+	background-color: @color-white;
+	background-image: url('../images/manaslake.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 15px 80px;
+	background-size: 125px;
+}
+
+@media (max-width:768px){
+	body{
+		background-image: none;
+	}
+}
+
+
+.page-container {
+	padding: 0 5px;
+	padding-top: 70px !important;
+}
+@media (min-width:768px){
+	.page-container {
+		padding-top: 75px !important;
+	}
+}
+
+.ease{
+  -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.easeIn {
+    -webkit-animation: fadein 1s; 
+       -moz-animation: fadein 1s; 
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.easeOut {
+    -webkit-animation: fadeout 0.5s; 
+       -moz-animation: fadeout 0.5s; 
+        -ms-animation: fadeout 0.5s; 
+         -o-animation: fadeout 0.5s; 
+            animation: fadeout 0.5s;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+.text-white{
+	color: @color-white;
+}
+
+.text-primary{
+	color: @color-primary;
+}
+
+.bgClass{
+	background-color: lighten(@color-grey, 38%);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#screen-two-region, #screen-three-region, #screen-four-region{
+	&.section{
+		border-top: 1px solid @gray-lighter;
+		min-height: 100vh;
+	}
+}
+.safari{
+	#screen-two-region, #screen-three-region, #screen-four-region{
+		&.section{
+			min-height: 100%;
+		}
+	}
+}
+
+@media (max-width:767px){
+	#screen-one-region, #screen-two-region, #screen-three-region{
+		h3{
+			.h4;
+			.bold;
+		}
+		h4{
+			.h5;
+		}
+	}
+}
+
+
+.cbp-spmenu-vertical{
+	background-color: darken(@color-primary, 25%);
+	border-left: 1px solid darken(@color-primary, 15%);
+	& > ul{
+		list-style-type: none;
+		padding-bottom: 0;
+		padding: 0;
+		& > li{
+			color: lighten(@gray-light, 30%);
+			a{
+				.h4;
+				.bold;
+				color: lighten(@gray-light, 30%);
+				// border-bottom: 1px solid darken(@color-primary, 15%);
+				border-bottom: none;
+				margin-bottom: 0;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		} 
+	}
+	h3{
+		background-color: darken(@color-primary, 20%);
+		color: lighten(@gray-light, 30%);
+	}
+	.menuWishlist{
+		list-style-type: none;
+		background-color: darken(@color-primary, 28%);
+		li{
+			a{
+				padding: 5px 0;
+				border: 0;
+				margin: 0;
+				float: left;
+				color: @color-white;
+			}
+			.del{
+				float: right;
+				margin-right: 10px;
+				font-family: 'Glyphicons Halflings';
+				font-size: 14px;
+				&:before{
+					content: "\e014";
+				}
+			}
+			&:first-child{
+				padding-top: 10.5px;
+			}
+			&:last-child{
+				padding-bottom: 10.5px;
+			}
+		}
+	}
+
+	.compareBtn{
+		.small;
+		// text-align: right;
+		padding-left: 40px;
+		border: none;
+		// background-color: darken(@color-primary, 28%);
+		border-bottom: 1px solid darken(@color-primary, 15%);
+		.bold;
+	}
+
+	.compareTxt{
+		padding: 0 10px 5px;
+		color: lighten(@gray-light, 10%);
+		.small;
+		.light;
+	}
+}
+
+.cbp-spmenu-top{
+	top: -600px;
+}
+@media (max-width:767px){
+	.cbp-spmenu-top{
+		top: -1200px;
+	}
+}
+
+.cbp-spmenu-horizontal{
+	border-bottom: 1px solid darken(@color-primary, 25%);
+	.blockTitle{
+		padding-top: 10px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid @gray-lighter;
+		text-transform: uppercase;
+		.bold;
+	}
+
+	.floorPlan{
+		background: url('../images/floor-plan.jpg');
+		width: 230px;
+		height: 260px;
+	}
+	.summaryBox{
+		height: 100%;
+		background-color: darken(@color-primary, 25%);
+		color: darken(@color-primary, 10%);
+		padding-bottom: 10px;
+		.blockTitle{
+			border-bottom: 1px solid darken(@color-primary, 20%);
+		}
+	}
+	.section{
+		margin-top: 25px;
+		color: @color-white;
+		.small{
+			color: darken(@color-primary, 10%);
+			text-transform: uppercase;
+			.light;
+		}
+	}
+}
+
+
+/*Map Styles*/
+a.im-clear-button{
+	display: none;
+}
+
+@media (max-width:1024px){
+	.im-container{
+		height: 100% !important;
+	}
+	#mapplic1, #mapplic_new1{
+		height: 420px !important;
+	}
+}
+@media (min-width:1025px) and (max-width:1400px){
+	.im-container{
+		height: 100% !important;
+	}
+	#mapplic1, #mapplic_new1{
+		height: 500px !important;
+	}
+}
+
+
+/*Browser not supported*/
+#jr_header{
+	.h2;
+	.medium;
+	color: @color-primary;
+	text-align: center;
+	margin-top: 0;
+
+	.skyiLogo{
+		height: 60px;
+		width: 40px;
+		margin: 0 auto 10px;
+		background: url('../images/skyi-logoS-1.png');
+		background-size: 40px 60px;
+	}
+}
+
+#jr_inner{
+	width: 800px !important;
+	max-width: 800px !important;
+	border: none;
+	box-shadow: 0 0 0 1px lighten(@color-grey, 30%), 2px 2px 2px lighten(@color-primary, 35%);
+	p{
+		.light;
+		text-align: center;
+	}
+
+	ul{
+		text-align: center;
+		margin-top: 20px;
+		li{
+			display: inline-block;
+			float: none;
+
+			&:hover{
+				// box-shadow: 0 0 0 1px lighten(@color-grey, 30%), 2px 2px 2px lighten(@color-primary, 35%);
+			}
+			
+			a{
+				.light;
+				.small;
+			}
+		}
+
+	}
+}
+
+/**** start print modal styles ****/
+#print-modal {
+    background: #FFF;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -465px;
+    padding: 0 68px;
+    width: 794px;
+    box-shadow: 0 0 20px #000;
+        -moz-box-shadow: 0 0 20px #000;
+      -webkit-box-shadow: 0 0 10px #000;
+}
+
+#print-modal-content {
+    margin: 68px 0;
+    border: none;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+#print-modal-controls {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+    top: 15px;
+    left: 45%;
+    margin: 0 0 0 -81px;
+    position: fixed;
+    padding: 5px 0;
+    background: rgba(250, 250, 250, 0.75);
+}
+
+    #print-modal-controls a {
+        color: #FFF;
+        display: block;
+        float: left;
+        height: 32px;
+        text-decoration: none;
+        text-indent: -999em;
+        width: 80px;
+    }
+    
+    #print-modal-controls a:hover {
+        opacity: 0.75;
+    }
+    
+    #print-modal-controls a.print {
+        background: url(../images/icon-print.png) no-repeat 50% 50%;
+    }
+    #print-modal-controls a.close {
+        background: url(../images/icon-close.png) no-repeat 50% 50%;
+    }
+/**** end print modal styles ****/
