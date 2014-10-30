@@ -1,0 +1,68 @@
+body{
+	font-weight: 500;
+}
+
+.navbar-inverse {
+	background: @color-primary;
+	border: 0;
+}
+
+.btn{
+	text-transform: uppercase;
+}
+
+.btn-lg, .btn-group-lg > .btn{
+	font-size: @font-size-base;
+}
+
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active{
+	background-color: lighten(@gray-light, 20%)
+}
+
+.light{
+	font-weight: 400;
+}
+
+.medium{
+	font-weight: 600;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.h-xl{
+	font-size: ceil(@font-size-base * 10.18);
+	line-height: floor(@font-size-base * 10.18 * 1.07);
+}
+
+/*Headings*/
+
+h1{
+	line-height: floor(@font-size-h1 * 1.27);
+}
+
+h2{
+	line-height: floor(@font-size-h2 * 1.1);
+}
+
+h3{
+	line-height: floor(@font-size-h3 * 1.25);
+}
+
+h4{
+	line-height: floor(@font-size-h4 * 1.25);
+}
+
+h5{
+	line-height: floor(@font-size-h5 * 1.26);
+}
+

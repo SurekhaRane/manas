@@ -1,0 +1,115 @@
+
+.vs-header{
+	padding: 0;
+	.vs-nav{
+		height: 60px;
+		li{
+			padding: 10px 0 20px;
+			margin-bottom: 0;
+			a{
+				.h4;
+				.bold;
+				padding: 5px 0;
+				margin: 0;
+				color: @color-primary;
+				border-bottom: 2px solid @color-primary;
+			}
+		} 
+		li.vs-nav-right a{
+			padding: 10px 0 5px;
+			border-top: 2px solid lighten(@color-grey, 38%);
+			border-bottom: 0;
+			.small;
+			// .light;
+			color: darken(@gray-lighter, 10%);
+		} 
+		li.vs-nav-left a{
+			padding: 10px 0 5px;
+			border-top: 2px solid lighten(@color-grey, 38%);
+			border-bottom: 0;
+			.small;
+			// .light;
+			color: darken(@gray-lighter, 10%);
+		}
+	}
+}
+
+.vs-container{
+	position: static;
+}
+
+.vs-triplelayout{
+	.vs-wrapper {
+		& > section {
+			left: 0%;
+			width: 100%;
+			padding: 0 0 20px;
+		}
+		.vs-content{
+			width: 90%;
+			padding: 0;
+		}
+		.towerUnits{
+			background: url('../images/tower.png') no-repeat center;
+			background-position-y: -5px; 
+			background-size: contain;
+			.subHeader{
+				font-size: @font-size-base;
+				padding-top: 5px;
+				border-bottom: none;
+				display: none;
+				.row{
+					margin: auto;
+					padding: 5px 0;
+					border-bottom: 2px solid lighten(@color-grey, 30%);
+				}
+			}
+		}
+	    .vs-left {
+	        left: -100%;
+	    }
+	    .vs-left-outer {
+	        left: -200%;
+	    }
+	    .vs-current {
+	        position: relative;
+	        z-index: 100;
+	    }
+	    .vs-right {
+	        left: 100%;
+	    }
+	    .vs-right-outer {
+	        left: 200%;;
+	    }
+	}
+}
+
+
+.vs-sidenav div {
+	display: none;
+}
+
+.psuedoUnits{
+	position: absolute;
+	top: 53px;
+	right: 14px;
+	.psuedoBox{
+		display: none;
+	}	
+}
+
+
+@media(min-width:768px){
+	.viewsNo{
+		float: left;
+	}
+}
+
+
+.vs-header{
+	.vs-nav{
+		li a{
+			.ease;
+		}
+	}
+}

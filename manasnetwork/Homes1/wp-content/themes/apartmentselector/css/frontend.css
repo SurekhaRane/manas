@@ -1,0 +1,242 @@
+/*
+Theme Name:     Skyi Site
+Theme URI:      http://ajency.in/
+Description:    Layout for Skyi Site
+Author:         Jarryd for Ajency.in
+Author URI:     http://ajency.in/
+Template:       skyi
+Version:        0.1.0
+*/
+/**** Colors ****/
+/**** Clearfix ****/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.navbar-inverse {
+  background: #f28428;
+}
+.grid-container {
+  max-width: 1164px;
+  margin: 10px auto;
+  padding: 0 5px;
+  text-align: center;
+  *zoom: 1;
+  /**** Block Type 1 ****/
+
+  /**** Block Type 2 ****/
+
+  /**** Block Type 3 ****/
+
+}
+.grid-container:after,
+.grid-container:before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.grid-container .grid-link {
+  box-shadow: 0 0 0 1px #dfe1e5 inset, 2px 2px 2px #fce4d0;
+  display: table;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+  color: #8b91a0;
+  cursor: pointer;
+}
+.grid-container .grid-link:hover,
+.grid-container .grid-link.selected {
+  border: 1px solid #f28428;
+  padding: 8px;
+  text-decoration: none;
+}
+.grid-container .grid-link:hover .grid-main-title,
+.grid-container .grid-link.selected .grid-main-title {
+  color: #f28428;
+}
+.grid-container .grid-link.selected {
+  color: #f28428;
+}
+.grid-container .grid-link.selected:before {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  font-size: 20px;
+  font-family: 'Glyphicons Halflings';
+  content: '\e089';
+}
+.grid-container .grid-block-1 {
+  display: inline-block;
+  width: 47.2394%;
+  margin-right: 3.52113%;
+  margin-bottom: 10px;
+  height: 80px;
+  background: #ffffff;
+  color: #8b91a0;
+}
+.grid-container .grid-block-1 .grid-link .grid-text-wrap {
+  display: table-cell;
+  font-size: 14px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+.grid-container .grid-block-1 .grid-link .grid-text-wrap .grid-main-title {
+  display: block;
+  line-height: 14px;
+  padding: 2px 0;
+  font-weight: 600;
+}
+.grid-container .grid-block-1 .grid-link .grid-text-wrap .grid-sub-title {
+  text-transform: lowercase;
+  font-size: 12px;
+}
+.grid-container .grid-block-1:nth-child(even) {
+  margin-right: 0;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .grid-container .grid-block-1 {
+    width: 32.4917%;
+    margin-right: 2.76243%;
+    margin-bottom: 20px;
+    height: 88px;
+  }
+  .grid-container .grid-block-1 .grid-link .grid-text-wrap {
+    font-size: 1.2rem;
+    line-height: 18px;
+  }
+  .grid-container .grid-block-1:nth-child(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 980px) {
+  .grid-container .grid-block-1 {
+    margin-right: 1.66113%;
+    width: 15.2824%;
+    height: 88px;
+  }
+  .grid-container .grid-block-1 .grid-link .grid-text-wrap {
+    font-size: 1.2rem;
+    line-height: 18px;
+  }
+  .grid-container .grid-block-1:nth-child(even),
+  .grid-container .grid-block-1:nth-child(3n) {
+    margin-right: 1.66113%;
+  }
+  .grid-container .grid-block-1:nth-child(6n) {
+    margin-right: 0;
+  }
+  .grid-container .grid-block-1:last-child {
+    margin-right: 0;
+  }
+}
+.grid-container .grid-block-2 {
+  margin-bottom: 10px;
+}
+.grid-container .grid-block-2 .grid-link .grid-text-wrap {
+  height: 90px;
+  position: relative;
+}
+.grid-container .grid-block-2 .grid-link .grid-text-wrap .grid-main-title {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  left: 12px;
+  line-height: 16px;
+  margin: 0;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+.grid-container .grid-block-2 .grid-link .grid-text-wrap .grid-sub-title {
+  display: block;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 88px;
+  text-align: center;
+  color: #f28428;
+}
+@media (min-width: 768px) {
+  .grid-container .grid-block-2 {
+    float: left;
+    margin-right: 2.76243%;
+    width: 31.4917%;
+  }
+  .grid-container .grid-block-2 .grid-link .grid-text-wrap {
+    height: 220px;
+  }
+  .grid-container .grid-block-2 .grid-link .grid-text-wrap .grid-main-title {
+    font-size: 1.5rem;
+    left: 22px;
+    top: 18px;
+  }
+  .grid-container .grid-block-2 .grid-link .grid-text-wrap .grid-sub-title {
+    font-size: 9rem;
+    line-height: 203px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .grid-container .grid-block-2:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+.grid-container .grid-block-3 {
+  float: left;
+  margin: 0 1.77305% 1.77305% 0;
+  padding: 1px;
+  width: 12.766%;
+}
+.grid-container .grid-block-3 .grid-link .grid-text-wrap {
+  height: 0;
+  padding-bottom: 166.667%;
+  position: relative;
+  text-align: center;
+  transition: color 250ms ease-out 0s;
+  width: 100%;
+}
+.grid-container .grid-block-3 .grid-link .grid-text-wrap .grid-main-title {
+  display: none;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  position: absolute;
+  top: 4%;
+  width: 100%;
+}
+.grid-container .grid-block-3 .grid-link .grid-text-wrap .grid-sub-title {
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 100;
+  left: 0;
+  line-height: 24px;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.grid-container .grid-block-3:nth-child(7n) {
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  .grid-container .grid-block-3 .grid-link .grid-text-wrap {
+    padding-bottom: 112px;
+  }
+  .grid-container .grid-block-3 .grid-link .grid-text-wrap .grid-main-title {
+    display: block;
+    font-size: 1rem;
+  }
+  .grid-container .grid-block-3 .grid-link .grid-text-wrap .grid-sub-title {
+    font-size: 2.5rem;
+    line-height: 40px;
+    margin-top: -20px;
+  }
+}
